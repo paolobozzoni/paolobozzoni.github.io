@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  position: fixed; 
+  position: fixed; /* Ensure the header stays at the top */
   top: 0;
   left: 0;
   right: 0;
@@ -22,6 +22,7 @@ body {
   align-items: center;
   color: white;
   background-color: black;
+  z-index: 1000; /* Set a high z-index to ensure it stays above other elements */
 }
 
 .header-left, .header-right {
@@ -127,7 +128,7 @@ body {
   text-align: justify;
   line-height: 30px;
   font-size: 20px;
-  padding: 15px 100px;
+  padding: 15px 10px;
 }
 
 .mylanguages li {
@@ -140,12 +141,16 @@ body {
   height: 22px;
   margin-left: -5px;
   transform: translateY(3px);
+  z-index: 1; /* Ensure icons stay below the header */
+  position: relative; /* Prevent them from overlapping improperly */
 }
 
 .code-icon2 {
   height: 18px;
   transform: translateY(3px);
   margin-right: 5px;
+  z-index: 1; /* Ensure icons stay below the header */
+  position: relative; /* Prevent them from overlapping improperly */
 }
 
 /*RESPONSIVE DESIGN*/
@@ -185,5 +190,14 @@ body {
   /* Push down the body content */
   body {
     margin-top: 20vh; /* Adjust this value as needed */
+  }
+
+  .desc {
+    text-align: stretch;
+    padding: 10px;
+  }
+
+  .title {
+    text-align: center;
   }
 }

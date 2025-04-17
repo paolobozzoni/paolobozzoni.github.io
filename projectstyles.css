@@ -47,3 +47,28 @@ body {
   background-color: white;
   color: black;
 }
+
+@media (max-width: 725px) {
+  .details-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .details-container a {
+    display: block; /* Make anchor tags stack vertically */
+    width: 100%; /* Make them take up the full width */
+    text-align: center; /* Center the text inside the anchor tags */
+    margin: 5px 0; /* Add vertical spacing between the buttons */
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
+    padding: 10px; /* Ensure consistent padding */
+  }
+
+  .desc {
+    padding: 10px;
+    text-align: start;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
