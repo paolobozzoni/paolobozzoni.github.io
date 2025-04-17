@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paolo Bozzoni - Contacts</title>
+  <link rel="stylesheet" href="style.css" class="css">
+  <link rel="stylesheet" href="contactme.css">
+  <link rel="icon" type="image/png" href="assets/pfp.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="assets/pfp.png" alt="My profile picture" class="pfp">
+      <h1 class="name">Paolo Bozzoni</h1>
+    </div>
+
+    <button class="hamburger-menu" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <div class="header-right">
+      <a class="header-button" href="index.html">Homepage</a>
+      <a class="header-button" href="projects.html">My Projects</a>
+      <a class="header-button" href="contactme.html">Contact Me</a>
+    </div>
+
+    <div class="mobile-menu">
+      <a class="header-button" href="index.html">Homepage</a>
+      <a class="header-button" href="projects.html">My Projects</a>
+      <a class="header-button" href="contactme.html">Contact Me</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="contact">
+      <div class="img-container">
+        <img src="assets/ds-icon.png">
+      </div>
+      <div class="text">
+        <a onclick="copyDiscord()" target="_blank" class="title">Discord</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="img-container">
+        <img src="assets/email-icon.png">
+      </div>
+      <div class="text">
+        <a onclick="copyEmail()">Email</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="img-container">
+        <img src="assets/github-icon.png">
+      </div>
+      <div class="text">
+        <a target="_blank" href="https://github.com/paolobozzoni" class="title">GitHub</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="img-container">
+        <img src="assets/instagram-icon.png">
+      </div>
+      <div class="text">
+        <a target="_blank" href="https://www.instagram.com/paolo._.bozzoni?igsh=MTByZXZqcGtibjY3dQ==" class="title">Instagram</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="img-container">
+        <img src="assets/reddit-icon.png">
+      </div>
+      <div class="text">
+        <a target="_blank" href="https://reddit.com/user/Wrong_Comedian_587/"  class="title">Reddit</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function copyEmail() {
+    const email = "bozzoni.paolo09@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Email address copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy email: ", err);
+    });
+  }
+
+    function copyDiscord() {
+    const discordUsername = "paoloishere09";
+    navigator.clipboard.writeText(discordUsername).then(() => {
+      alert("Discord username copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy Discord username: ", err);
+    });
+  }
+  </script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

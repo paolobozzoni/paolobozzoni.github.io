@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="assets/pfp.png">
+    <title>Paolo Bozzoni - HomePage</title>
   </head>
   <body>
-    
-    <script src="script.js"></script>
+    <header class="header">
+      <div class="header-left">
+        <img src="assets/pfp.png" alt="My profile picture" class="pfp">
+        <h1 class="name">Paolo Bozzoni</h1>
+      </div>
+
+      <button class="hamburger-menu" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <div class="header-right">
+        <a class="header-button" href="index.html">Homepage</a>
+        <a class="header-button" href="projects.html">My Projects</a>
+        <a class="header-button" href="contactme.html">Contact Me</a>
+      </div>
+
+      <div class="mobile-menu">
+        <a class="header-button" href="index.html">Homepage</a>
+        <a class="header-button" href="projects.html">My Projects</a>
+        <a class="header-button" href="contactme.html">Contact Me</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="whoami">
+        <h1 class="title">Who am I?</h1>
+        <p class="desc">
+          Hi there! 👋 I'm a student passionate about coding and technology. I'm currently on a journey to learn how to code and turn this passion into a career. This website is part of my learning process, where I experiment, build, and grow as a developer.
+        </p>
+      </div>
+
+      <div class="mylanguages">
+        <h1 class="title">My Languages</h1>
+        <p class="desc">
+          As a passionate developer, I have experience working with the following languages:
+        </p>
+        <ul class="desc">
+          <li><strong><img src="assets/html-icon.png" class="code-icon1">HTML</strong>: The backbone of web development, allowing me to structure content effectively.</li>
+          <li><strong><img src="assets/css-icon.png" class="code-icon1">CSS</strong>: Bringing designs to life with styling and responsive layouts.</li>
+          <li><strong><img src="assets/js-icon.png" class="code-icon2">JavaScript</strong>: Adding interactivity and dynamic behavior to websites.</li>
+          <li><strong><img src="assets/python-icon.png" class="code-icon2">Python</strong>: A versatile language I'm currently learning for data analysis, automation, and backend development.</li>
+          <li><strong><img src="assets/c++-icon.png" class="code-icon2">C++</strong>: Exploring this powerful language to understand low-level programming and improve performance-critical applications.</li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>

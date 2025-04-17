@@ -1,0 +1,29 @@
+.contact {
+  display: grid;
+  grid-template-columns: 60px 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 20px 15%;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.img-container img{
+  height: 50px;
+}
+
+.contact a{
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  background-color: white;
+  color: black;
+}
