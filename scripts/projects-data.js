@@ -38,6 +38,11 @@ let projects = [
     repname: "chessboard",
     title: "ChessBoard",
     desc: "A static HTML and CSS chessboard that will be the starting point of my upcoming chess project.",
+  },
+  {
+    repname: "random-number-generator",
+    title: "Random Number Generator",
+    desc: "A simple random number generator that includes a minimum and maximum value.",
   }
 ]
 
